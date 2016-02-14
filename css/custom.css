@@ -1,0 +1,350 @@
+/**
+
+ *
+
+ * 在这里自定义你的CSS代码
+
+ */
+
+.huoxing-header
+{
+	position:fixed;
+    top: 0;
+    z-index: 19861107;
+    width: 100%;
+    height: 67px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    line-height: 67px;
+}
+
+#masthead .navbar {
+    border-radius: 0;
+    margin-bottom: 10px;
+    min-height: 67px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.huoxing-body
+{
+	margin-top: 67px;
+}
+
+.navbar .navbar-header
+{
+	height: 67px;
+	line-height: 67px;
+}
+
+.nav li a {
+    padding: 0 11px;
+    margin: 0 15px;
+    position: relative;
+}
+.nav li a {
+    line-height: 67px;
+    height: 67px;
+    color: #717171;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
+a, a:focus, a:hover, a:visited {
+    text-decoration: none;
+    outline: 0;
+
+}
+.nav li a:focus,.nav li a:hover,.nav li a:visited {
+    
+    border-bottom: 3px #428bca solid;
+    background-color: #FFFFFF;
+}
+a {
+    color: #428bca;
+}
+a {
+    background: 0 0;
+}
+
+.top-navbar .navbar-nav li.current-menu-item>a, .top-navbar .navbar-nav li.current-menu-parent>a {
+     opacity: 1; 
+     background: #FFFFFF; 
+    border-bottom: 3px #428bca solid;
+}
+
+.nav li a:after {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #26a9e1;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .5s,opacity .5s,-webkit-transform .5s;
+    transition: height .5s,opacity .5s,transform .5s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.navbar-self-right
+{
+    float: right!important;
+}
+
+.news {
+    height: 66px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #2f3239;
+    text-align: center;
+    line-height: 66px;
+
+}
+
+ .news a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.news ul.news-list {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+}
+
+.news ul.news-icon {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: 250px;
+}
+
+.new ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ .news ul.news-icon li {
+    display: inline-block;
+    margin: 26px 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #717171;
+    cursor: pointer;
+}
+
+.news ul.news-icon li.active {
+    background-color: #fff;
+}
+
+.scroll_page .page .content {
+    margin-top: 300px;
+    width: 80%;
+    height: 80px;
+     background: none; 
+     border:none; 
+     box-shadow:none; 
+     padding: 0px; 
+    text-transform: uppercase;
+     color: #FDF9F9; 
+    display: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+#page_menu_left .menu-top-menu-container ul li{
+    float:left;
+    border: 1px solid #ededed;
+    margin-top: 25px;
+}
+
+#page_menu_left ul li{
+    width:50%;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: initial;
+　}
+
+.about-content
+{
+    text-indent: 2em;
+    line-height: 2em;
+    margin-top: 60px;
+}
+
+.about-content p
+{
+    font-size: 18px;
+    color: #555;
+    font-family: "Hiragino Sans GB";
+    line-height: 35px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.second-content {
+    font-size: 14px;
+    padding: 20px 50px 30px;
+    color: #717171;
+    line-height: 30px;
+    min-height: 170px;
+}
+.second-title
+{
+    margin-top: 60px;
+    font-size: 26px;
+    font-weight: 700;
+    color:#2c2f35;
+}
+
+a.btn-register {
+    display: inline-block;
+    background-color: #26a9e1;
+    width: 600px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.main>.center-content {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    min-height: 410px;
+}
+
+.center-content {
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+}
+.main>.center-content .block {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 7px rgba(200,200,200,.75);
+    box-shadow: 0 0 7px rgba(200,200,200,.75);
+    overflow: hidden;
+    /*width: 280px;*/
+    position: relative;
+    margin: 90px auto 0;
+    padding: 30px 125px;
+    border: 1px solid #c9ccd0;
+    background-color: #fafafa;
+    font-size: 12px;
+}
+
+.main .welcome {
+    padding: 25px 90px;
+    color: #465567;
+    border-bottom: solid 1px #e6e6e6;
+    font-size: 14px;
+    line-height: 25px;
+}
+.main .register-form {
+    padding: 15px 167px 40px;
+}
+
+.main .register-form .line {
+    position: relative;
+    margin-bottom: 13px;
+    clear: both;
+}
+
+.main .register-form .line .extra-name {
+    font-size: 14px;
+    color: #585858;
+    margin-bottom: 10px;
+}
+.main>.center-content .block .line * {
+    vertical-align: middle;
+}
+
+.main .register-form .line .extra-name .need {
+    margin-left: 10px;
+    color: #e96a6a;
+}
+.main>.center-content .block .need {
+    margin-left: 10px;
+    color: #e96a6a;
+}
+.main>.center-content .block .line * {
+    vertical-align: middle;
+}
+
+.main  .register-form div[contentEditable=true], .main .register-form input[type=password], .main .register-form input[type=text] {
+    width: 350px;
+    margin-bottom: 3px;
+}
+
+.main.register-form .line.email-line .status, .main .register-form .line.pwd-line .status {
+    top: 36px;
+}
+.main .register-form .line .status {
+    position: absolute;
+    top: 8px;
+    left: 375px;
+}
+
+.main .register-form .line .name {
+    display: inline-block;
+    width: 80px;
+    font-size: 14px;
+    color: #585858;
+}
+
+.main>.center-content .block .line * {
+    vertical-align: middle;
+}
+
+.main .register-form .IM-line .small, .main .register-form .name-line .small {
+    width: 192px;
+    margin-right: 5px;
+}
+
+.main .register-form div[contentEditable=true].small, .main .register-form input[type=password].small, .main .register-form input[type=text].small {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.main .register-form .register {
+    width: 137px;
+    padding: 6px 0;
+    line-height: 1;
+    height: 30px;
+}
+.main .register-form .btn
+{
+    display: inline-block;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-image: -o-linear-gradient(bottom,#1e82ca 0,#5ebce6 100%);
+    background-image: -webkit-linear-gradient(bottom,#1e82ca 0,#5ebce6 100%);
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#1e82ca),to(#5ebce6));
+    background-image: linear-gradient(bottom,#1e82ca 0,#5ebce6 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(176,223,243,.75);
+    box-shadow: inset 0 1px 0 rgba(176,223,243,.75);
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    min-width: 60px;
+    color: #fff;
+    border: 1px solid #1e82ca;
+    background-color: #5ebce6;
+}
+
+

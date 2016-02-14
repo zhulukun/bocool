@@ -1,0 +1,208 @@
+Searching 153 files for "wp_nav_menu"
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/backup.php:
+   43      <ul>
+   44       <?php 
+   45:         if(function_exists('wp_nav_menu')) {
+   46:             wp_nav_menu( array(
+   47                'menu'              => '',
+   48                'theme_location'    => 'header_menu',
+   ..
+  121              <!-- top_menu items -->
+  122                  <?php
+  123:                   if(function_exists('wp_nav_menu')) {
+  124:                     wp_nav_menu( array(
+  125                          'menu'              => 'header_menu',
+  126                          'theme_location'    => 'header_menu',
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/footer-colophon.php:
+   16            <!-- footer-menu items -->
+   17                  <?php 
+   18:                   if(function_exists('wp_nav_menu')) {
+   19:                       wp_nav_menu( array(
+   20              						'theme_location'    => 'footer_menu',
+   21              						'menu_class'        => 'about'
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/header-masthead.php:
+  154  			<!-- top_menu items -->
+  155                  <?php
+  156:                   if(function_exists('wp_nav_menu')) {
+  157:                     wp_nav_menu( array(
+  158  						'menu'              => 'header_menu',
+  159  						'theme_location'    => 'header_menu',
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/header.php:
+   68      <ul>
+   69       <?php 
+   70:         if(function_exists('wp_nav_menu')) {
+   71:             wp_nav_menu( array(
+   72                'menu'              => '',
+   73                'theme_location'    => 'header_menu',
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/inc/cache.php:
+   34  	return $nav_menu;
+   35  }
+   36: add_filter( 'pre_wp_nav_menu', 'dmeng_get_nav_menu_cache', 10, 2 );
+   37  
+   38  //~ 设置菜单缓存
+   ..
+   44  	return $nav_menu;
+   45  }
+   46: add_filter( 'wp_nav_menu', 'dmeng_set_nav_menu_cache', 10, 2 );
+   47  
+   48  //~ 更新菜单时更新菜单缓存时间
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/page.php:
+    7          <div class="col-md-3 hidden-xs hidden-sm" id="page_menu_left">
+    8             <?php 
+    9:                   if(function_exists('wp_nav_menu')) {
+   10:                     wp_nav_menu( array(
+   11  						'theme_location'    => 'page_menu'
+   12  					)	);
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/template-product.php:
+   13        <div class="col-md-12 hidden-xs hidden-sm" id="page_menu_left">
+   14          <?php
+   15:         if(function_exists('wp_nav_menu')) {
+   16:         wp_nav_menu(array( 'theme_location' => 'page_menu') );
+   17          }
+   18          ?>
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/template-team.php:
+   13        <div class="col-md-3 hidden-xs hidden-sm" id="page_menu_left">
+   14          <?php
+   15:         if(function_exists('wp_nav_menu')) {
+   16:         wp_nav_menu(array( 'theme_location' => 'page_menu') );
+   17          }
+   18          ?>
+
+18 matches across 8 files
+
+
+Searching 153 files for "page_menu"
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/css/leo.css:
+ 1202      margin-bottom: 10px;
+ 1203  }
+ 1204: #page_menu_left .menu,
+ 1205  #leo-breadcrumb {
+ 1206      background-color: #fff;
+ ....
+ 1518      background-color: #384959
+ 1519  }
+ 1520: #page_menu_left  a {
+ 1521    color: #324155;
+ 1522    border: none;
+ ....
+ 1528    text-align: center;
+ 1529  }
+ 1530: #page_menu_left a:hover
+ 1531  {
+ 1532    color: #00aadc;
+ 1533    background-color: #fff;
+ 1534  }
+ 1535: #page_menu_left ul.menu li.current-menu-item a {
+ 1536    background-color: #F65656;
+ 1537    color: white;
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/functions.php:
+  131  		'left_menu' => __( '首页左侧导航菜单', 'dmeng' ),
+  132  		'footer_menu' => __( '页脚链接菜单', 'dmeng' ),
+  133: 		'page_menu' => __( 'Page页菜单', 'dmeng' ),
+  134  		'mobile_menu' => __( '手机端滑动菜单', 'dmeng' )
+  135  	) );
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/page.php:
+    5      <div class="row" id="top-main">
+    6           <!-- page左侧导航菜单区域-->
+    7:         <div class="col-md-3 hidden-xs hidden-sm" id="page_menu_left">
+    8             <?php 
+    9                    if(function_exists('wp_nav_menu')) {
+   10                      wp_nav_menu( array(
+   11: 						'theme_location'    => 'page_menu'
+   12  					)	);
+   13                    }
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/template-product.php:
+   11      <div class="row" id="top-main">
+   12        <!-- page左侧导航菜单区域-->
+   13:       <div class="col-md-12 hidden-xs hidden-sm" id="page_menu_left">
+   14          <?php
+   15          if(function_exists('wp_nav_menu')) {
+   16:         wp_nav_menu(array( 'theme_location' => 'page_menu') );
+   17          }
+   18          ?>
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/template-team.php:
+   11      <div class="row" id="top-main">
+   12        <!-- page左侧导航菜单区域-->
+   13:       <div class="col-md-3 hidden-xs hidden-sm" id="page_menu_left">
+   14          <?php
+   15          if(function_exists('wp_nav_menu')) {
+   16:         wp_nav_menu(array( 'theme_location' => 'page_menu') );
+   17          }
+   18          ?>
+
+11 matches across 5 files
+
+
+Searching 153 files for "menu-item-type-post_type"
+
+0 matches across 0 files
+
+
+Searching 153 files for "page_menu_left"
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/css/custom.css:
+  162  
+  163  
+  164: #page_menu_left .menu-top-menu-container ul li{
+  165      float:left;
+  166      border: 1px solid #ededed;
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/css/leo.css:
+ 1202      margin-bottom: 10px;
+ 1203  }
+ 1204: #page_menu_left .menu,
+ 1205  #leo-breadcrumb {
+ 1206      background-color: #fff;
+ ....
+ 1518      background-color: #384959
+ 1519  }
+ 1520: #page_menu_left  a {
+ 1521    color: #324155;
+ 1522    border: none;
+ ....
+ 1528    text-align: center;
+ 1529  }
+ 1530: #page_menu_left a:hover
+ 1531  {
+ 1532    color: #00aadc;
+ 1533    background-color: #fff;
+ 1534  }
+ 1535: #page_menu_left ul.menu li.current-menu-item a {
+ 1536    background-color: none;
+ 1537    color: #26a9e1;
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/page.php:
+    5      <div class="row" id="top-main">
+    6           <!-- page左侧导航菜单区域-->
+    7:         <div class="col-md-3 hidden-xs hidden-sm" id="page_menu_left">
+    8             <?php 
+    9                    if(function_exists('wp_nav_menu')) {
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/template-product.php:
+   11      <div class="row" id="top-main">
+   12        <!-- page左侧导航菜单区域-->
+   13:       <div class="col-md-12 hidden-xs hidden-sm" id="page_menu_left">
+   14          <?php
+   15          if(function_exists('wp_nav_menu')) {
+
+/Library/WebServer/Documents/web/wp-content/themes/enterprise/template-team.php:
+   11      <div class="row" id="top-main">
+   12        <!-- page左侧导航菜单区域-->
+   13:       <div class="col-md-3 hidden-xs hidden-sm" id="page_menu_left">
+   14          <?php
+   15          if(function_exists('wp_nav_menu')) {
+
+8 matches across 5 files
