@@ -1387,3 +1387,28 @@ function dmeng_only_first_cat_callback($value){
 add_filter( 'dmeng_post_meta_cat_show', 'dmeng_only_first_cat_callback' );
 add_filter( 'dmeng_the_title', 'dmeng_only_first_cat_callback' );
 
+
+
+function remove_menus() {
+ global $menu;
+ $restricted = array(__('Dashboard'));
+ end ($menu);
+ while (prev($menu)){
+ $value = explode(' ',$menu[key($menu)][0]);
+ if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+ }
+ }
+if ( is_admin() ) {
+ // 删除左侧菜单
+ add_action('admin_menu', 'remove_menus');
+ }
+//去除后台升级提示
+add_filter('pre_site_transient_update_core',    create_function('$a', "return null;")); // don't update core
+add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;")); // don't update plugins
+add_filter('pre_site_transient_update_themes',  create_function('$a', "return null;")); 
+
+
+
+
+
+
