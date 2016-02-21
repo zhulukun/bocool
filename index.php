@@ -1,9 +1,3 @@
-<?php
-/**
-*  Template Name:首页
-*
-*/
-?>
 <?php get_header(); ?>
     
 <?php get_header('masthead'); ?>
@@ -55,7 +49,6 @@
           </div> -->
         </div>
 
-
         <!-- <div class="control">
             <a href="#" class="next">Next</a>
         </div> -->
@@ -64,12 +57,13 @@
    
     <div class="page second">
         <div class="content">
+           
+
           <div class="row" style="color:#000">
-            <div class="col-md-4" style="padding:0 50px;"><p class="second-title">自动化测试</p><p class="second-content">自主研发的测试平台；采用先进高精度的机器臂；自动化的测试；自动化结果存储以及处理。</p></div>
-            <div class="col-md-4" style="padding:0 50px;"><p class="second-title">客观数据</p><p class="second-content">有别于主观使用评价，博酷科技采用客观的测试数据分析，评价智能电子的用户体验。</p></div>
-            <div class="col-md-4" style="padding:0 50px;"><p class="second-title">全程服务</p><p class="second-content">服务于智能电子的整个生命周期；在研发、生产、用户使用等不同阶段，为厂家和用户提供全程服务</p></div>
+            <p>敬请期待</p>
 
           </div>
+
         </div>
 
        <!--  <div class="control">
@@ -78,12 +72,17 @@
         </div> -->
     </div>
     <div class="page third">
-        <div class="content">
-            <div style="text-align:center">
-              <p style="font-size:28px;color:#000000"><b>高效的测试框架，稳定的测试脚本，分布式测试系统</b></p>
-              <p style="height:60px;line-height:60px;font-size:16px;color:#ccc">颠覆传统自动化测试模式</p>
-              <a class="btn-register" href="http://localhost/web/?page_id=62">查看产品</a>
+       <div class="content">
+           
+
+          <div class="row" style="color:#000">
+            <?php query_posts('showposts=3&category_name=index-2'); ?>
+              <?php while (have_posts()) : the_post(); ?>
+                        <div class="col-md-4" style="padding:0 50px;"><p><?php the_post_thumbnail(array(200,200));?> </p><p class="second-title"><?php the_title(); ?></p><div class="second-content"><?php the_content(); ?></div></div>
+              <?php endwhile;?> <?php wp_reset_query(); ?>
+
           </div>
+
         </div>
        <!--  <div class="control">
             <a href="#" class="next">Next</a>
