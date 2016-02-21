@@ -76,7 +76,7 @@
            
 
           <div class="row" style="color:#000">
-            <?php query_posts('showposts=3&category_name=index-2'); ?>
+            <?php query_posts('showposts=3&category_name=index-3'); ?>
               <?php while (have_posts()) : the_post(); ?>
                         <div class="col-md-4" style="padding:0 50px;"><p><?php the_post_thumbnail(array(200,200));?> </p><p class="second-title"><?php the_title(); ?></p><div class="second-content"><?php the_content(); ?></div></div>
               <?php endwhile;?> <?php wp_reset_query(); ?>
