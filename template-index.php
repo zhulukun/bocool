@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" media="screen" type="text/css" />
 <div class="scroll_page">
     <div class="page first">
-      <div>
+      <div style="margin-top:350px;">
         <div class="content">
           <?php query_posts('showposts=1&category_name=index-1'); ?>
 <?php while (have_posts()) : the_post(); ?>
