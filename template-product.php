@@ -17,18 +17,19 @@
         }
         ?>
       </div>
-     
+      <!-- page右侧内容显示区域 -->
+      <div class="col-md-12" id="mainstay">
+        <article class="leo-page-content">
+          <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+<!--           <h3 class="leo-page-title"><?php the_title(); ?></h3>
+ -->          <?php the_content(); ?>
+          <?php endwhile; ?>
+          <!-- 团队介绍 -->
+          
+        
+        </article>
+      </div>
     </div>
-    <div id="mainstay" style="margin-top:60px;">
-            <?php query_posts('showposts=4&category_name=mdt'); ?>
-                      <div class="row" style="color:#000">
-
-              <?php while (have_posts()) : the_post(); ?>
-                        <div class="col-md-6" style="padding:0 50px;"><?php the_post_thumbnail(array(428,324));?></div><div class="col-md-6"><div><p class="second-title"><?php the_title(); ?></p></div><div class="second-content"><?php the_content(); ?></div></div>
-             </div>
-              <?php endwhile;?> <?php wp_reset_query(); ?>
-
-          </div>
   </div>
 </section>
 <?php get_footer('colophon'); ?>
