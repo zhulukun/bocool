@@ -17,20 +17,18 @@
         }
         ?>
       </div>
-      <!-- page右侧内容显示区域 -->
-      <div class="col-md-12" id="mainstay">
-        <div class="content">
-          <div class="row" style="color:#000">
+     
+    </div>
+    <div class="col-md-12" id="mainstay">
             <?php query_posts('showposts=4&category_name=mdt'); ?>
+                      <div class="row" style="color:#000">
+
               <?php while (have_posts()) : the_post(); ?>
-                        <div class="col-md-4" style="padding:0 50px;"><p><?php the_post_thumbnail(array(200,200));?> </p><p class="second-title"><?php the_title(); ?></p><div class="second-content"><?php the_content(); ?></div></div>
+                        <div class="col-md-6" style="padding:0 50px;"><?php the_post_thumbnail(array(428,324));?></div><div class="col-md-6"><div class="second-content"><?php the_content(); ?></div><p class="second-title"><?php the_title(); ?></p></div>
+             </div>
               <?php endwhile;?> <?php wp_reset_query(); ?>
 
           </div>
-
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 <?php get_footer('colophon'); ?>
