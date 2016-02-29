@@ -14,12 +14,7 @@
     <div class="page first">
       <div style="margin-top:350px;">
         <div class="content">
-          <?php query_posts('showposts=1&category_name=index-1'); ?>
-<?php while (have_posts()) : the_post(); ?>
-          <p style="font-size:36px;font-weight:800;margin-bottom:50px;"><?php the_title(); ?>
-</p>
-<p><?php the_content(); ?></p>
-          <?php endwhile;?> <?php wp_reset_query(); ?>
+             <p style="font-size:42px;font-weight:800;">体验评价&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数据至上</p>
 
         </div>
       </div>
