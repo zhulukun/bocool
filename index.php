@@ -7,7 +7,7 @@
 <div class="scroll_page">
     <div class="page first">
       <div>
-        <div class="content">
+        <div class="content" style="margin-top:350px">
           <?php query_posts('showposts=1&category_name=index-1'); ?>
 <?php while (have_posts()) : the_post(); ?>
           <p style="font-size:36px;font-weight:800;margin-bottom:50px;"><?php the_title(); ?>
