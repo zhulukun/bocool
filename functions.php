@@ -1407,8 +1407,10 @@ add_filter('pre_site_transient_update_core',    create_function('$a', "return nu
 add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;")); // don't update plugins
 add_filter('pre_site_transient_update_themes',  create_function('$a', "return null;")); 
 
-
-
+//上传文件大小限制
+@ini_set( 'upload_max_size' , '200M' ); 
+@ini_set( 'post_max_size', '200M'); 
+@ini_set( 'max_execution_time', '600' ); 
 
 
 
