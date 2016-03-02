@@ -53,14 +53,18 @@
     </div>
    
     <div class="page second">
-        <div class="content">
-           
+        <div class="content" style="margin-top:60px;width:100%">
+            
+           <div class="row" style="color:#000">
+            <?php query_posts('showposts=1&category_name=index-2'); ?>
+              <?php while (have_posts()) : the_post(); ?>                             
 
-          <div class="row" style="color:#000">
-            <p>敬请期待</p>
+                <div class="col-md-12"><?php the_post_thumbnail(array(1280,512));?> </div>
+
+             <?php endwhile;?> <?php wp_reset_query(); ?>
 
           </div>
-
+         
         </div>
 
        <!--  <div class="control">
