@@ -60,10 +60,11 @@
         <div class="content" style="margin-top:60px;width:100%">
                   
           <div class="row" style="color:#000">
-            <?php query_posts('showposts=1&category_name=index-2'); ?>
+           <?php query_posts('showposts=1&category_name=index-2'); ?>
               <?php while (have_posts()) : the_post(); ?>                             
+               <?php $full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');?>
 
-                <div class="col-md-12"><?php the_post_thumbnail(array(1280,512));?> </div>
+                <div class="col-md-12"><img src="<?php echo $full_image_url[0]?>" class="img-responsive"></div>
 
              <?php endwhile;?> <?php wp_reset_query(); ?>
 
