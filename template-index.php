@@ -57,7 +57,7 @@
     </div>
    
     <div class="page second">
-        <div class="content" style="margin-top:60px;width:100%">
+        <div class="content" style="margin-top:120px;width:100%">
                   
           <div class="row" style="color:#000">
            <?php query_posts('showposts=1&category_name=index-2'); ?>
