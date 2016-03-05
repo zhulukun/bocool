@@ -53,30 +53,8 @@
     </div>
    
     <div class="page second">
-        <div class="content" style="margin-top:120px;width:100%">
-            
-           <div class="row" style="color:#000">
-            <?php query_posts('showposts=1&category_name=index-2'); ?>
-              <?php while (have_posts()) : the_post(); ?>                             
-               <?php $full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');?>
-
-                <div class="col-md-12"><img src="<?php echo $full_image_url[0]?>" class="img-responsive"></div>
-
-             <?php endwhile;?> <?php wp_reset_query(); ?>
-
-          </div>
-         
-        </div>
-
-       <!--  <div class="control">
-            <a href="#" class="next">Next</a>
-            <a href="#" class="prev">Prev</a>
-        </div> -->
-    </div>
-    <div class="page third">
        <div class="content">
            
-
           <div class="row" style="color:#000">
             <?php query_posts('showposts=3&category_name=index-3'); ?>
               <?php while (have_posts()) : the_post(); ?>
@@ -84,6 +62,7 @@
               <?php endwhile;?> <?php wp_reset_query(); ?>
 
           </div>
+        
 
         </div>
        <!--  <div class="control">
@@ -92,6 +71,19 @@
         </div> -->
   
 </div>
+
+    <div class="page third">
+        <div class="content" style="margin-top:120px;width:100%">
+            
+           <p>敬请期待</p>
+         
+        </div>
+
+       <!--  <div class="control">
+            <a href="#" class="next">Next</a>
+            <a href="#" class="prev">Prev</a>
+        </div> -->
+    </div>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mousewheel.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.js"></script>
