@@ -52,9 +52,13 @@
         <div class="content" style="margin-top:67px;height:100%;width:100%;background-image:url(<?php echo get_template_directory_uri(); ?>/images/bg.png);background-repeat:repeat-x">
 
            <div class="row">
-              <div class="col-md-4" style="font-weight:300;font-size:14px;text-align:center;margin-top:250px;padding:0px 0px 0px 150px">博酷科技致力于通过专业化的技术手段和客观数据，提升智能消费电子的用户体验。从为制造商提供产品研发生产过程中的测试验证，到为最终用户提供购买选型咨询服务，再到售后维修服务提供支持，服务整个智能消费电子的生命周期。
+              <?php query_posts('showposts=1&category_name=index-2'); ?>
+              <?php while (have_posts()) : the_post(); ?>
+              <div class="col-md-4" style="font-weight:300;font-size:14px;text-align:center;margin-top:250px;padding:0px 0px 0px 150px"><?php the_title();?>
               </div>
-              <div class="col-md-8" style="padding:0px 150px 0px 0px;text-align:left"><img src="<?php echo get_template_directory_uri(); ?>/images/yemian.png" width="860px" height="640px"></div>
+              <div class="col-md-8" style="padding:0px 150px 0px 0px;text-align:left"><?php the_post_thumbnail('full');?></div>
+              <?php endwhile;?> <?php wp_reset_query(); ?>
+              
            </div>
          
         </div>
