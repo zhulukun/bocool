@@ -60,7 +60,7 @@
              <div class="row">
               <?php query_posts('showposts=1&category_name=index-2'); ?>
               <?php while (have_posts()) : the_post(); ?>
-              <div class="col-md-4" style="font-weight:300;font-size:14px;text-align:center;margin-top:250px;padding:0px 0px 0px 150px"><?php the_content();?>
+              <div class="col-md-4" style="font-weight:300;font-size:16px;text-align:center;margin-top:250px;padding:0px 0px 0px 150px"><?php the_content();?>
               </div>
               <div class="col-md-8" style="padding:0px 150px 0px 0px;text-align:left"><?php the_post_thumbnail('full');?></div>
               <?php endwhile;?> <?php wp_reset_query(); ?>
