@@ -10,14 +10,25 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" media="screen" type="text/css" />
-<div class="scroll_page">
+<!--显示在小型设备-->
+<div class="container hidden-md hidden-lg visible-xs visible-sm" style="background-color:#FFFFFF;padding-top:30px;padding-bottom:30px;">
+  <div class="row">
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
+  </div>
+  <div class="row" style="margin-top:30px">
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
+  </div>
+</div>
+<div class="scroll_page hidden-xs hidden-sm">
     <div class="page first">
       <div style="margin-top:350px;">
         <div class="content" style="margin-top:350px">
           <p style="font-size:42px;font-weight:800;">体验评价&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数据至上</p>
         </div>
       </div>
-        <div class="row news hidden-xs hidden-sm" style="display: block;">
+        <div class="row news" style="display: block;">
            <!--    <div class="row">
             <div class="col-md-12 hidden-xs hidden-sm" id="qiniu-news">
               <span class="icon icon-sound"></span>
@@ -57,7 +68,7 @@
    <div class="page second">
         <div class="content" style="margin-top:67px;height:100%;width:100%;background-image:url(<?php echo get_template_directory_uri(); ?>/images/bg.png);background-repeat:repeat-x">
 
-             <div class="row">
+           <div class="row">
               <?php query_posts('showposts=1&category_name=index-2'); ?>
               <?php while (have_posts()) : the_post(); ?>
               <div class="col-md-4" style="font-weight:300;font-size:16px;text-align:center;margin-top:250px;padding:0px 0px 0px 150px"><?php the_content();?>
