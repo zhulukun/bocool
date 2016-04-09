@@ -13,12 +13,12 @@
 <!--显示在小型设备-->
 <div class="container hidden-md hidden-lg visible-xs visible-sm" style="background-color:#FFFFFF;padding-top:30px;padding-bottom:30px;">
   <div class="row">
-    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
-    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=62"><div class="div-border">首页</div></a></div>
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=13"><div class="div-border">产品</div></a></div>
   </div>
   <div class="row" style="margin-top:30px">
-    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
-    <div class="col-sm-6 col-xs-6" style="text-align:center"><div class="div-border">首页</div></div>
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=47"><div class="div-border">案例</div></a></div>
+    <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=125"><div class="div-border">关于我们</div></a></div>
   </div>
 </div>
 <div class="scroll_page hidden-xs hidden-sm">
@@ -101,6 +101,10 @@
             <a href="#" class="prev">Prev</a>
         </div> -->
 </div>
+
+
+
+
     
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mousewheel.js"></script>
