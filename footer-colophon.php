@@ -8,7 +8,7 @@
  */
  ?>
 </div>  <!--huoxing-body end-->
-<div class="huoxing-footer" style="z-index:1500">
+<div class="huoxing-footer hidden-xs hidden-sm" style="z-index:1500">
 <footer id="leo-footer">
   <section class="container" id="colophon" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
       <div class="row">
