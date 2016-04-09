@@ -130,19 +130,7 @@ if( $custom_header ){
   <div class="container">
     <div class="navbar-header">
       <a id="gtchaos" href="#menu-left"><span></span></a>
-      <div class="navbar-header-search-shopping">
-            <div class="toggle-search"><i class="fa fa-search"></i></div>
-            <div class="search-expand">
-              <div class="search-expand-inner">
-                <form method="get" class="searchform" action="<?php bloginfo( 'url' ); ?>">
-                    <div>
-                      <input type="text" class="search" name="s" onblur="if(this.value=='')this.value='请输入关键词...';" onfocus="if(this.value=='请输入关键词...')this.value='';" value="请输入关键词...">
-                       <span class="search-remove fa fa-times"></span>
-                    </div>
-               </form>
-             </div>
-            </div>
-      </div>
+    
       <a href="<?php echo home_url(); ?>">
 		<img class="navbar-logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png" alt="">
       </a>
