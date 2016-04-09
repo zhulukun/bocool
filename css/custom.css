@@ -162,7 +162,12 @@ a {
     text-align: center;
 }
 
-
+@media (min-width: 768px){
+    #page_menu_left .menu-top-menu-container ul li{
+    float:left;
+    border: 1px solid #ededed;
+}
+} 
 #page_menu_left .menu-top-menu-container ul li{
     float:left;
     border: 1px solid #ededed;
