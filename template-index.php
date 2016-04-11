@@ -101,11 +101,7 @@
             <a href="#" class="prev">Prev</a>
         </div> -->
 </div>
-
-
-
-
-    
+  
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mousewheel.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.js"></script>
