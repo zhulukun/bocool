@@ -21,7 +21,6 @@
 
 
               <?php endwhile;?> <?php wp_reset_query(); ?>
-
 </div>
 <?php get_footer('colophon'); ?>
 <?php get_footer(); ?>
