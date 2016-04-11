@@ -9,7 +9,7 @@
 <?php get_header('masthead'); ?>
 
 <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-<div style="margin-top:60px;">
+<div class="case">
             <?php query_posts('showposts=20&category_name=case'); ?>
               <?php while (have_posts()) : the_post(); ?>
                   <div class="row" style="color:#000">
