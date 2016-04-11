@@ -14,7 +14,7 @@
     <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=47"><div class="div-border">案例</div></a></div>
     <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=125"><div class="div-border">关于我们</div></a></div>
   </div>
-   <p style="font-size:24px;font-weight:800;color:#31708f">体验评价&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数据至上</p>
+   <p style="font-size:24px;font-weight:800;color:#31708f">体验评价&nbsp&nbsp&nbsp数据至上</p>
 
 </div>
 <div class="scroll_page hidden-xs hidden-sm">
