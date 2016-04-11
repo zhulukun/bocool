@@ -5,15 +5,17 @@
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" media="screen" type="text/css" />
 <!--显示在小型设备-->
-<div class="container hidden-md hidden-lg visible-xs visible-sm" style="background-color:#FFFFFF;padding-top:30px;padding-bottom:30px;">
+<div class="container hidden-md hidden-lg visible-xs visible-sm" style="background-color:#FFFFFF;padding-top:30px;padding-bottom:30px;text-align:center">
   <div class="row">
     <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=62"><div class="div-border">首页</div></a></div>
     <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=13"><div class="div-border">产品</div></a></div>
   </div>
-  <div class="row" style="margin-top:30px">
+  <div class="row" style="margin-top:30px;margin-bottom:50px;">
     <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=47"><div class="div-border">案例</div></a></div>
     <div class="col-sm-6 col-xs-6" style="text-align:center"><a href="http://www.bocool.net/?page_id=125"><div class="div-border">关于我们</div></a></div>
   </div>
+   <p style="font-size:36px;font-weight:500;color:#31708f">体验评价&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数据至上</p>
+
 </div>
 <div class="scroll_page hidden-xs hidden-sm">
     <div class="page first">
